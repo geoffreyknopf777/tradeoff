@@ -13,6 +13,26 @@ if(!isset($_SESSION['uid']))
 
 <br />
 
+<form>
+
+<p style="text-align: center">
+	
+	<span style="font-size: 150%;">
+	Search Transactions
+	</span>
+
+	<br /><br />
+	
+	Zip Code:
+	<input/>
+	<input type="submit" value="Search" style="background-color: black; color: white;"/>
+
+</p>
+	
+</form>
+
+<br />
+
 <style>
 table {
     width:100%;
@@ -26,22 +46,6 @@ th, td {
     text-align: right;
 }
 </style>
-
-<h3>
-Pending
-</h3>
-
-<h3>
-Current
-</h3>
-
-<h3>
-Review
-</h3>
-
-<h3>
-History
-</h3>
 
 <table>
 	<tr>

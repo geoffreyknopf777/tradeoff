@@ -69,7 +69,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 	if(isset($_POST['accept'])){
 		$trans_id = $_POST['trans_id'];
-		//accept($con, $trans_id, $_SESSION['uid']);
+		accept($con, $trans_id, $_SESSION['uid']);
 	}
 
 	?>
@@ -159,6 +159,8 @@ th, td {
 
 		<th>Accept:</th>
 
+    <th>Address:</th>
+
 	</tr>
 
 
@@ -235,9 +237,13 @@ th, td {
       <td>
           <input style="background-color: black; color: white;" type="submit" value="Purchase" onclick="document.getElementById('trans_id').value='<?php echo $row['trans_id']; ?>'" name="accept" />
        </td>
-     </tr>
 				<?php
+        echo "<td>";
+          echo $row['address'];
+        echo "</td>";
+        echo "</tr>";
       }
+       
     }
 ?>
 
